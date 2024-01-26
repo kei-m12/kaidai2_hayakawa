@@ -52,6 +52,22 @@ li{
     justify-content: center;
     font-size: 14px;
 }
+
 li + li{
     border-left: 1px solid black;
+}
+
+@media screen and (max-width:767px){
+    ul{
+        flex-direction: column;
+    }
+    ul div{
+        flex-direction: column;
+        text-align: left;
+    }
+    li{
+        text-align: left;
+        text-decoration: underline;
+        text-decoration: color black;
+    }
 }
